@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "imports": {
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.0.15",
+    "astro": "npm:astro@^5.5.4",
+    "clsx": "npm:clsx@^2.1.1",
+    "tailwind-merge": "npm:tailwind-merge@^3.0.2",
+    "tailwindcss": "npm:tailwindcss@^4.0.15"
+  },
+  "nodeModulesDir": "auto"
+}
