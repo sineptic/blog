@@ -5,6 +5,8 @@ title: "first page"
 
 this is a test
 
+and [this](https://example.com) is a link
+
 ```rust title="some rust code"
 fn main() {
     println!("Hello, World!");
