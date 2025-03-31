@@ -1,3 +1,6 @@
+---
+title: "first page"
+---
 # Hello, World!
 
 this is a test
