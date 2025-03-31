@@ -3,9 +3,18 @@ title: "first page"
 ---
 # Hello, World!
 
+## Inline formatting
 this is a test
 
 and [this](https://example.com) is a link
+
+this is **emphasis**
+
+*italic*
+
+`inline code`
+
+## Code blocks
 
 ```rust title="some rust code"
 fn main() {
