@@ -34,18 +34,18 @@
 }
 
 /* Shadcn-like scrollbar */
-pre::-webkit-scrollbar {
+*::-webkit-scrollbar {
     @apply h-2.5 w-2.5;
 }
 
-pre::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     @apply bg-transparent;
 }
 
-pre::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     @apply rounded-full bg-crust bg-clip-padding p-px;
 }
 
-pre::-webkit-scrollbar-corner {
+*::-webkit-scrollbar-corner {
     @apply bg-transparent;
 }
