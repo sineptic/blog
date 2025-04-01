@@ -1,0 +1,31 @@
+---
+import ProseLayout from "@/layouts/ProseLayout.astro";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+    collection: CollectionEntry<any>[];
+}
+
+const { collection } = Astro.props;
+---
+
+<ProseLayout>
+    <h1>All posts</h1>
+    <ol reversed>
+        {
+            collection
+                .toSorted(
+                    (a, b) =>
+                        Date.parse(a.data.created) - Date.parse(b.data.created),
+                )
+                .map((post) => (
+                    <li>
+                        <a href={`/${post.collection}/${post.id}`}>
+                            {post.data.title}
+                        </a>
+                    </li>
+                ))
+                .reverse()
+        }
+    </ol>
+</ProseLayout>

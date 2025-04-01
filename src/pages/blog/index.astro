@@ -1,4 +1,5 @@
 ---
+import CollectionList from "@/components/collection-list.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
@@ -7,16 +8,5 @@ const collection: CollectionEntry<"blog">[] = await getCollection("blog");
 ---
 
 <Layout title="Blog">
-    <h1>All posts</h1>
-    <ul>
-        {
-            collection.map((post) => (
-                <li>
-                    <a href={`${post.collection}/${post.id}`}>
-                        {post.data.title}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+    <CollectionList collection={collection} />
 </Layout>
