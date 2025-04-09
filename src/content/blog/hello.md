@@ -63,6 +63,18 @@ fn factorial_of_fibonacci_of_factorial_of_factorial_of_factorial_of_factorial(n:
 
 > Blockquote
 
+> [!NOTE] callouts
+> Need styling
+
+> [!note]
+> Nested callout
+>
+> > [!important]
+> > Further nested callout
+> >
+> > > [!warning]
+> > > Even further nested callout
+
 > Dorothy followed her through many of the beautiful rooms in her castle.
 >
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.

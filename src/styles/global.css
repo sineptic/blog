@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "./callout.css";
 
 @theme {
     --color-rosewater: #f5e0dc;
